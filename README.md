@@ -15,13 +15,13 @@ IsItMe will now run whenever the Computer is turned on after shutdown or restart
 3. Open PowerShell as an Administrator
 ![image](https://github.com/user-attachments/assets/363dfdfe-efda-4bca-a5ae-24043341d69d)
 4. Type `cd ` and then press `Ctrl + V` or Right Click to Paste the Address and press `Enter`
-5. Copy and paste the commands mentioned one by one below
-`$originalPolicy = Get-ExecutionPolicy`
-`Set-ExecutionPolicy RemoteSigned`
-PowerShell will display a message. Press `Y` and `Enter`
-`.\runOnWake.ps1`
-Powershell should display a success message.
-`Set-ExecutionPolicy $originalPolicy`
+5. Copy and paste the commands mentioned one by one below\
+- `$originalPolicy = Get-ExecutionPolicy`\
+- `Set-ExecutionPolicy RemoteSigned`\
+PowerShell will display a message. Press `Y` and `Enter`\
+- `.\runOnWake.ps1`\
+Powershell should display a success message.\
+- `Set-ExecutionPolicy $originalPolicy`\
 PowerShell will display a message. Press `Y` and `Enter`
 
 Now IsItMe will run even when the computer is woken up from sleep or hibernation.
